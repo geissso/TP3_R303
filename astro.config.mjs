@@ -7,8 +7,10 @@ import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
+  trailingSlash: "always",
   vite: {
     plugins: [tailwindcss()]
+
   },
 
   adapter: netlify()
